@@ -1,1 +1,15 @@
-
+body{
+    transition: 0.3s ease;
+    background: linear-gradient(#121212,#7B1FA2,#121212);
+}
+@keyframes coloracao_fundo {
+    0%{
+    background: linear-gradient(#121212,#7B1FA2,#121212);
+    }
+    50%{
+    background: linear-gradient(#121212,#121212,#7B1FA2);
+    }
+    100%{
+    background: linear-gradient(#7B1FA2,#121212,#121212);
+    }
+}
