@@ -1,5 +1,6 @@
 body{
     transition: 0.3s ease;
+    animation: coloracao_fundo infinite;
     background: linear-gradient(#121212,#7B1FA2,#121212);
 }
 @keyframes coloracao_fundo {
