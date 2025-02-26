@@ -6,8 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    
-    ?>
+    <div id="header"></div>
+    <script>
+        fetch("folder/header.html")
+            .then(Response => Response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data
+            })
+            .catch(error => console.error("Erro ao carregar a página")
+            );
+            
+    </script>
 </body>
 </html>
