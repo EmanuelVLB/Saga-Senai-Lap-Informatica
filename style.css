@@ -89,6 +89,10 @@ color: #f4f4f4;
 /* Nav */
 
 .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100svw;
     padding: 0 1em;
 }
