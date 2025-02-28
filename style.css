@@ -1,6 +1,37 @@
 /* Reset */
-/* Adrian */
-/* Isaque */
-/* Lucas */
-/* Raphael */
-/* Emanuel */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif; /* Para títulos */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+p, span {
+    font-family: 'Poppins', sans-serif; /* Para textos gerais */
+    font-weight: 300;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0.3em;
+}
