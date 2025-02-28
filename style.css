@@ -115,7 +115,9 @@ color: #f4f4f4;
 }
 
 /* Main */
-
+main, section{
+    background-color: transparent;
+}
 main{
     height: 88svh;
 }
