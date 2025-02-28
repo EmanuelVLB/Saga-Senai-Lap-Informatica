@@ -119,6 +119,8 @@ main{
     height: 88svh;
 }
 section{
+    color: #fff;
+    height: 100%;
     background-color: #1a1a1a;
 }
 
