@@ -25,6 +25,27 @@ p, span {
     font-weight: 300;
 }
 
+/* colorção */
+
+body{
+    color: #fff;
+    background-color: #1a1a1a1a;
+}
+h1, h2, h3{
+    color: #4b4b4b;
+}
+footer, header{
+    background-color: #5d3fd3;
+}
+button{
+    background-color: #5d3fd3;
+}
+a:hover{
+    text-decoration: underline;
+    color: #7a5fe9;
+}
+
+
 /* Header */
 
 header{
