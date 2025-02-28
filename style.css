@@ -32,6 +32,7 @@ body{
     background-color: #1a1a1a1a;
 }
 a{
+    transition: 0.3s ease-in-out;
     color: #fff;
 }
 footer, header{
@@ -43,6 +44,7 @@ button{
 a:hover{
     text-decoration: underline;
     color: #7a5fe9;
+    background-color: #1a1a1a;
 }
 
 /* Body */
