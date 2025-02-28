@@ -55,7 +55,6 @@ body{
 
 header{
     height: 4svh;
-    width: 100svw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,7 +92,6 @@ color: #f4f4f4;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100svw;
     padding: 0 1em;
 }
 .nav-links{
@@ -117,7 +115,6 @@ color: #f4f4f4;
 /* Main */
 
 main{
-    width: 100svw;
     height: 88svh;
 }
 
@@ -125,5 +122,4 @@ main{
 
 footer{
     height: 4svh;
-    width: 100svw;
 }
