@@ -60,7 +60,15 @@ header{
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: 0 0.3em;
+    padding: 0.3em 0.5em;
+}
+.logged_image_user{
+    display: none;
+}
+.logged_image_user img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
 
 /* Nav */
