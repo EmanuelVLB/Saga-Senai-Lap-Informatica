@@ -54,7 +54,7 @@ body{
 /* Header */
 
 header{
-    height: 4svh;
+    height: 8svh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +106,6 @@ color: #f4f4f4;
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 4svh;
     display: flex;
     flex-direction: row;
     align-items: center;
