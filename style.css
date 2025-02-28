@@ -54,7 +54,7 @@ body{
 /* Header */
 
 header{
-    height: 2svh;
+    height: 4svh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,7 +66,7 @@ header{
 /* Nav */
 
 .navbar{
-    height: 2svh;
+    height: 4svh;
     display: flex;
     flex-direction: row;
 }
@@ -83,5 +83,11 @@ li{
 /* Main */
 
 main{
-    height: 96svh;
+    height: 88svh;
+}
+
+/* Footer */
+
+footer{
+    height: 4svh;
 }
