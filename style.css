@@ -66,6 +66,7 @@ header{
 /* Nav */
 
 .navbar{
+    padding: 0 1em;
 }
 .nav-links{
     margin: 0;
@@ -74,6 +75,8 @@ header{
     height: 4svh;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 li{
     list-style: none;
