@@ -56,7 +56,7 @@ body{
 header{
     height: 4svh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: 0;
