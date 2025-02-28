@@ -62,6 +62,9 @@ header{
     margin: 0;
     padding: 0.3em 0.5em;
 }
+.nome_empresa{
+    font-size: 18pt;
+}
 .logged_image_user{
     display: none;
 }
@@ -69,6 +72,14 @@ header{
     height: 32px;
     width: 32px;
     border-radius: 50%;
+}
+.bt_menu{
+    font-size: 18pt;
+    border: none;
+}
+.bt_menu:hover{
+background-color: #7a5fe9;
+color: #f4f4f4;
 }
 
 /* Nav */
