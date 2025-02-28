@@ -98,13 +98,12 @@ color: #f4f4f4;
     width: 100%;
     margin: 0;
     padding: 0;
-    gap: 0.3em;
     height: 4svh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 5em;
 }
 .nav-links li{
     list-style: none;
