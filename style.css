@@ -102,9 +102,11 @@ color: #f4f4f4;
     align-items: center;
     justify-content: space-between;
 }
-li{
+.nav-links li{
     list-style: none;
-
+}
+.nav-links li a{
+    text-decoration: none;
 }
 
 /* Main */
