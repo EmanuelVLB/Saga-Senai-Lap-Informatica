@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+     <header>
+        <nav class="navbar">
+            <h1 class="logo">LAP Informática</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Pedidos Feitos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="pedido-container">
+        <h2>Fazer Pedido</h2>
+        <form action="pedidos.html" method="POST">
+            <label for="descricao">Descrição do Pedido:</label>
+            <input type="text" id="descricao" name="descricao" required>
+            
+            <label for="endereco">Endereço de Entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="data">Data de Entrega:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
+    </footer>
     <script src="../script.js"></script>
 </body>
 </html>

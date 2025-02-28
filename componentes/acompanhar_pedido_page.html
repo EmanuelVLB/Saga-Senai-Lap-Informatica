@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">LAP Informática</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="acompanhar-container">
+        <h2>Acompanhar Pedido</h2>
+        <p>Acompanhe seu pedido em tempo real.</p>
+        <div id="map"></div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        function initMap() {
+            const loja = { lat: -21.7581, lng: -43.3503 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 14,
+                center: loja
+            });
+            const marker = new google.maps.Marker({
+                position: loja,
+                map: map,
+                title: "Pedido em trânsito"
+            });
+        }
+
+        window.onload = function() {
+            initMap();
+        };
+    </script>
     <script src="../script.js"></script>
 </body>
 </html>
