@@ -73,8 +73,11 @@ header{
     width: 32px;
     border-radius: 50%;
 }
+.not_logged_in{
+    gap: 1em;
+}
 .bt_menu{
-    font-size: 18pt;
+    font-size: 10pt;
     border: none;
 }
 .bt_menu:hover{
