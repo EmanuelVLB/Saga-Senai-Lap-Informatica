@@ -63,6 +63,7 @@ header{
     padding: 0.3em 0.5em;
 }
 .header_bar{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
