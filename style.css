@@ -117,13 +117,9 @@ color: #f4f4f4;
     gap: 5em;
 }
 .nav-links li{
-    height: 2em;
-    width: 5em;
     list-style: none;
 }
 .nav-links li a{
-    width: 100%;
-    height: 100%;
     text-decoration: none;
 }
 
