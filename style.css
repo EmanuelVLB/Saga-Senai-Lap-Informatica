@@ -77,6 +77,8 @@ header{
     gap: 1em;
 }
 .bt_menu{
+    height: 100%;
+    width: calc(auto + 5px);
     font-size: 10pt;
     border: none;
 }
