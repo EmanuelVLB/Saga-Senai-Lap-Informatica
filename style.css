@@ -25,13 +25,13 @@ p, span {
     font-weight: 300;
 }
 
-/* colorção */
+/* colores */
 
 body{
-    color: #fff;
+    color: #4b4b4b;
     background-color: #1a1a1a1a;
 }
-h1, h2, h3{
+a{
     color: #4b4b4b;
 }
 footer, header{
@@ -45,6 +45,11 @@ a:hover{
     color: #7a5fe9;
 }
 
+/* Body */
+
+body{
+    height: 100svh;
+}
 
 /* Header */
 
