@@ -129,13 +129,10 @@ color: #f4f4f4;
 main{
     height: 88svh;
 }
-#home{
+main{
     color: #fff;
     height: 100%;
     background-color: #1a1a1a;
-}
-#home h2{
-    margin: 0;
 }
 
 /* Footer */
