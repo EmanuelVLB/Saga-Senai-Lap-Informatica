@@ -120,7 +120,7 @@ color: #f4f4f4;
     list-style: none;
 }
 .nav-links li a{
-    padding: 1em 1em 0em 1em;
+    padding: 1em 0.5em 0em 0.5em;
     text-decoration: none;
     text-align: start;
 }
@@ -129,14 +129,20 @@ color: #f4f4f4;
 main{
     height: 88svh;
 }
-section{
+#home{
     color: #fff;
     height: 100%;
     background-color: #1a1a1a;
 }
+#home h2{
+    margin: 0;
+}
 
 /* Footer */
 
-footer{
+#footer{
     height: 4svh;
+}
+#foter p{
+    margin: 0;
 }
