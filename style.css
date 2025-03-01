@@ -128,11 +128,15 @@ color: #f4f4f4;
 /* Main */
 main{
     height: 88svh;
-}
-main{
+    padding: 1em 0;
     color: #fff;
     height: 100%;
     background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* Footer */
