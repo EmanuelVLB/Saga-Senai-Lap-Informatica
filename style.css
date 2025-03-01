@@ -137,9 +137,6 @@ main{
     justify-content: center;
     align-items: center;
 }
-#image{
-
-}
 #image img{
     border-radius: 8px;
     filter: drop-shadow(0 4px 8px #ffffff36);
@@ -148,6 +145,10 @@ picture{
     width: 20em;
     height: 20em;
 }
+article, #image{
+    width: 50%;
+}
+
 
 /* Footer */
 
