@@ -140,6 +140,10 @@ main{
 #image{
 
 }
+#image img{
+    border-radius: 8px;
+    filter: drop-shadow(0 4px 8px #ffffff36);
+}
 
 /* Footer */
 
