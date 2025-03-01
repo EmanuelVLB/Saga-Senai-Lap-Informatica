@@ -120,7 +120,7 @@ color: #f4f4f4;
     list-style: none;
 }
 .nav-links li a{
-    padding: 1em 0.5em 0em 0.5em;
+    padding: 0.5em 0.5em 0em 0.5em;
     text-decoration: none;
     text-align: start;
 }
