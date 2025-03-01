@@ -120,6 +120,7 @@ color: #f4f4f4;
     list-style: none;
 }
 .nav-links li a{
+    padding: 1em;
     text-decoration: none;
 }
 
