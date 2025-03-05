@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header_bar">
-            <h1 class="nome_empresa">LAP Informática</h1>
-            <div id="loggedOrNotlogged">
-                <div class="logged_image_user">
-                    <img src="" alt="Imagem de usuário">
-                </div>
-                <div class="not_logged_in">
-                    <button class="login_bt bt_menu">Login</button>
-                    <button class="cadastre-se_bt bt_menu">Cadastre-se</button>
-                </div>
-            </div>
+      <div class="header_bar">
+        <h1 class="nome_empresa">LAP Informática</h1>
+        <div id="loggedOrNotlogged">
+          <div class="logged_image_user">
+            <img src="" alt="Imagem de usuário" />
+          </div>
+          <div class="not_logged_in">
+            <button class="cadastre-se_bt bt_menu">Cadastre-se</button>
+            <button class="login_bt bt_menu">Login</button>
+          </div>
         </div>
-            <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="componentes/prdidos_feitos_page.html">Pedidos Feitos</a></li>
-                <li><a href="componentes/novo_pedido_page.html">Fazer Pedido</a></li>
-                <li><a href="componentes/entreEmContato_e_sobre_page.html">Sobre</a></li>
-                <li><a href="#footer">Contato</a></li>
-                <li><a href="componentes/acompanhar_pedido_page.html">Mapa</a></li>
-                <li><a href="#">Sair</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+          </li>
+          <li><a href="./componentes/novo_pedido_page.html">Fazer Pedido</a></li>
+          <li>
+            <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+          </li>
+          <li><a href="#footer">Contato</a></li>
+          <li><a href="./componentes/acompanhar_pedido_page.html">Mapa</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar_compacta">
+        <div class="menu_compacto">
+          <button class="menu_open_or_close">
+            <img
+            src="midia/menu_icone_branco.png"
+            alt="Mais opções"
+            width="30px"
+            height="30px"
+            />
+          </button>
+          <ul class="menu_ativo">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+            </li>
+            <li>
+              <a href="./componentes/novo_pedido_page.html">Fazer Pedido</a>
+            </li>
+            <li>
+              <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+            </li>
+            <li><a href="#footer">Contato</a></li>
+            <li>
+            <a href="./componentes/acompanhar_pedido_page.html">Mapa</a>
+          </li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main>
-        <article>
-            <section class="hero">
-                <h1>Facilitando suas entregas com tecnologia</h1>
-            <p>Gerencie e acompanhe seus pedidos em tempo real com praticidade e eficiência.</p>
-            <a href="fazer_pedido.html" class="btn">Faça seu pedido agora</a>
+      <article>
+        <section class="hero">
+          <h1>Facilitando suas entregas com tecnologia</h1>
+          <p>
+            Gerencie e acompanhe seus pedidos em tempo real com praticidade e
+            eficiência.
+          </p>
+          <a href="fazer_pedido.html" class="btn">Faça seu pedido agora</a>
         </section>
-        
+
         <section class="beneficios">
-            <h2>Por que escolher a LAP Informática?</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Rastreamento em Tempo Real</h3>
-                    <p>Acompanhe seus pedidos pelo mapa com atualizações ao vivo.</p>
-                </div>
-                <div class="card">
-                    <h3>Pedidos Rápidos e Simples</h3>
-                    <p>Faça seu pedido em poucos cliques e otimize seu tempo.</p>
-                </div>
-                <div class="card">
-                    <h3>Atendimento Eficiente</h3>
-                    <p>Nosso assistente virtual ajuda você a resolver dúvidas rapidamente.</p>
-                </div>
+          <h2>Por que escolher a LAP Informática?</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Rastreamento em Tempo Real</h3>
+              <p>Acompanhe seus pedidos pelo mapa com atualizações ao vivo.</p>
             </div>
+            <div class="card">
+              <h3>Pedidos Rápidos e Simples</h3>
+              <p>Faça seu pedido em poucos cliques e otimize seu tempo.</p>
+            </div>
+            <div class="card">
+              <h3>Atendimento Eficiente</h3>
+              <p>
+                Nosso assistente virtual ajuda você a resolver dúvidas
+                rapidamente.
+              </p>
+            </div>
+          </div>
         </section>
-        
+
         <section class="como-funciona">
-            <h2>Como funciona?</h2>
-            <ol>
-                <li>Cadastre-se ou faça login</li>
-                <li>Solicite um pedido informando os detalhes da entrega</li>
-                <li>Acompanhe o status e a localização do motoboy</li>
-                <li>Receba sua entrega com segurança</li>
-            </ol>
+          <h2>Como funciona?</h2>
+          <ol>
+            <li>Cadastre-se ou faça login</li>
+            <li>Solicite um pedido informando os detalhes da entrega</li>
+            <li>Acompanhe o status e a localização do motoboy</li>
+            <li>Receba sua entrega com segurança</li>
+          </ol>
         </section>
-        
+
         <section class="cta">
-            <h2>Pronto para otimizar suas entregas?</h2>
-            <a href="cadastro.html" class="btn">Cadastre-se agora</a>
+          <h2>Pronto para otimizar suas entregas?</h2>
+          <a href="cadastro.html" class="btn">Cadastre-se agora</a>
         </section>
-    </article>
+      </article>
     </main>
-    
+
     <footer id="footer">
-        <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
+      <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
