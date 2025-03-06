@@ -7,15 +7,64 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-        <header>
-        <nav class="navbar">
-            <h1 class="logo">LAP Informática</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>
+      <div class="header_bar">
+        <h1 class="nome_empresa">LAP Informática</h1>
+        <div id="loggedOrNotlogged">
+          <div class="logged_image_user">
+            <img src="" alt="Imagem de usuário" />
+          </div>
+          <div class="not_logged_in">
+            <button class="cadastre-se_bt bt_menu">Cadastre-se</button>
+            <button class="login_bt bt_menu">Login</button>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+          </li>
+          <li><a href="./componentes/novo_pedido_page.html">Fazer Pedido</a></li>
+          <li>
+            <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+          </li>
+          <li><a href="#footer">Contato</a></li>
+          <li><a href="./componentes/acompanhar_pedido_page.html">Mapa</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar_compacta">
+        <div class="menu_compacto">
+          <button class="menu_open_or_close">
+            <img
+            src="midias/imagens/menu_icone_branco.png"
+            alt="Mais opções"
+            width="30px"
+            height="30px"
+            />
+          </button>
+          <ul class="menu_ativo">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+            </li>
+            <li>
+              <a href="./componentes/novo_pedido_page.html">Fazer Pedido</a>
+            </li>
+            <li>
+              <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+            </li>
+            <li><a href="#footer">Contato</a></li>
+            <li>
+            <a href="./componentes/acompanhar_pedido_page.html">Mapa</a>
+          </li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     
     <main class="cadastro-container">
         <h2>Cadastro</h2>
