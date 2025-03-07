@@ -12,3 +12,4 @@ bt_menu.addEventListener("click", function () {
     contador -= 1;
   }
 });
+//Tem que dar um required = true no id - data
