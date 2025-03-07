@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <header>
       <div class="header_bar">
-        <h1 class="nome_empresa">LAP Informática</h1>
+        <img src="midia/lap_logo.png" alt="logo lap informática" width="90px" height="50">
         <div id="loggedOrNotlogged">
           <div class="logged_image_user">
             <img src="" alt="Imagem de usuário" />
           </div>
           <div class="not_logged_in">
-            <button class="cadastre-se_bt bt_menu">Cadastre-se</button>
-            <button class="login_bt bt_menu">Login</button>
+            <a class="cadastre-se_bt bt_menu" href="cadastro_page.html"
+              >Cadastre-se</a
+            >
+            <a class="login_bt bt_menu" href="login_page.html">Login</a>
           </div>
         </div>
       </div>
@@ -24,14 +26,14 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li>
-            <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+            <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
           </li>
-          <li><a href="./componentes/novo_pedido_page.html">Fazer Pedido</a></li>
+          <li><a href="novo_pedido_page.html">Fazer Pedido</a></li>
           <li>
-            <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+            <a href="entreEmContato_e_sobre_page.html">Sobre</a>
           </li>
           <li><a href="#footer">Contato</a></li>
-          <li><a href="./componentes/acompanhar_pedido_page.html">Mapa</a></li>
+          <li><a href="acompanhar_pedido_page.html">Mapa</a></li>
           <li><a href="#">Sair</a></li>
         </ul>
       </nav>
@@ -39,52 +41,76 @@
         <div class="menu_compacto">
           <button class="menu_open_or_close">
             <img
-            src="midias/imagens/menu_icone_branco.png"
-            alt="Mais opções"
-            width="30px"
-            height="30px"
+              src="midia/menu_icone_branco.png"
+              alt="Mais opções"
+              width="30px"
+              height="30px"
             />
           </button>
           <ul class="menu_ativo">
             <li><a href="index.html">Home</a></li>
             <li>
-              <a href="./componentes/prdidos_feitos_page.html">Pedidos Feitos</a>
+              <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
             </li>
             <li>
-              <a href="./componentes/novo_pedido_page.html">Fazer Pedido</a>
+              <a href="novo_pedido_page.html">Fazer Pedido</a>
             </li>
             <li>
-              <a href="./componentes/entreEmContato_e_sobre_page.html">Sobre</a>
+              <a href="entreEmContato_e_sobre_page.html">Sobre</a>
             </li>
             <li><a href="#footer">Contato</a></li>
             <li>
-            <a href="./componentes/acompanhar_pedido_page.html">Mapa</a>
-          </li>
-          <li><a href="#">Sair</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-    
+              <a href="acompanhar_pedido_page.html">Mapa</a>
+            </li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <main class="pedido-container">
-        <h2>Fazer Pedido</h2>
-        <form action="pedidos.html" method="POST">
-            <label for="descricao">Descrição do Pedido:</label>
-            <input type="text" id="descricao" name="descricao" required>
-            
-            <label for="endereco">Endereço de Entrega:</label>
-            <input type="text" id="endereco" name="endereco" required>
-            
-            <label for="data">Data de Entrega:</label>
-            <input type="date" id="data" name="data" required>
-            
-            <button type="submit">Enviar Pedido</button>
-        </form>
+      <h2>Fazer Pedido</h2>
+      <form action="novo_pedido_page.html" method="POST">
+        <h2>Coleta</h2>
+        <div class="endereco_de_coleta">
+          <input type="text" name="rua" id="rua_coleta" placeholder="Rua">
+          <input type="text" name="numero" id="numero_coleta" placeholder="Número">
+          <input type="text" name="cep" id="cep_coleta" placeholder="CEP" maxlength="8" minlength="8" required>
+          <input type="text" name="bairro" id="bairro_coleta" placeholder="Bairro" required>
+          <input type="text" name="cidade" id="cidade_coleta" placeholder="Cidade">
+          <input type="text" name="complemento" id="complemento_coleta" placeholder="Complemento (Apto., bloco...)">
+          
+        </div>
+        <h2>Entrega</h2>
+        <div class="endereco_de_entrega">
+          <input type="text" name="rua" id="rua_entrega" placeholder="Rua">
+          <input type="text" name="numero" id="numero_entrega" placeholder="Número">
+          <input type="text" name="cep" id="cep_entrega" placeholder="CEP" maxlength="8" minlength="8" required>
+          <input type="text" name="bairro" id="bairro_entrega" placeholder="Bairro" required>
+          <input type="text" name="cidade" id="cidade_entrega" placeholder="Cidade">
+          <input type="text" name="complemento" id="complemento_entrega" placeholder="Complemento (Apto., bloco...)">
+        </div>
+        <div id="peso">
+          <input type="number" id="peso_produto" name="peso_do_produto" required placeholder="Peso do produto">
+          <select name="peso" id="peso_kg_g">
+            <option value="kg">Kg (Quilo)</option>
+            <option value="g">g (Grama)</option>
+          </select>
+        </div>
+        <div id="agendar_entrega_div">
+          <input type="checkbox" name="checkbox" id="agendar_entrega">
+            <P>Agendar entrega</P>
+        </div>
+        <input type="date" id="data" name="data" required />
+        <textarea name="descrição" id="descricao" placeholder="Descrição do produto" required></textarea>
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
+      <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
     </footer>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
