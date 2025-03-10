@@ -83,10 +83,10 @@ header {
   gap: 2em;
   flex-wrap: wrap;
 }
-
+/* 
 .nav-links li {
   list-style: none;
-}
+} */
 
 .nav-links li a {
   padding: 0.5em;
