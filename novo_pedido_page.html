@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
-      <div class="header_bar">
-        <img src="midias/imagens/lap_logo.png" alt="logo lap informática" width="90px" height="50">
-        <div id="loggedOrNotlogged">
-          <div class="logged_image_user">
-            <img src="" alt="Imagem de usuário" />
+      <div class="--headerBar">
+        <img src="midia/lap_logo.png" alt="LAP Informática logo" width="90px" height="50">
+        <div id="--loggedOrNotLogged">
+          <div class="--loggedUserImage">
+            <img src="" alt="User image" />
           </div>
-          <div class="not_logged_in">
-            <a class="cadastre-se_bt bt_menu" href="cadastro_page.html"
+          <div class="--notLoggedIn">
+            <a class="--signUpBtn --menuBtn" href="cadastro_page.html"
               >Cadastre-se</a
             >
-            <a class="login_bt bt_menu" href="login_page.html">Login</a>
+            <a class="--loginBtn --menuBtn" href="login_page.html">Login</a>
           </div>
         </div>
       </div>
-      <nav class="navbar">
-        <ul class="nav-links">
+      <nav class="--navbar">
+        <ul class="--navLinks">
           <li><a href="index.html">Home</a></li>
           <li>
             <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
@@ -32,22 +32,22 @@
           <li>
             <a href="entreEmContato_e_sobre_page.html">Sobre</a>
           </li>
-          <li><a href="#footer">Contato</a></li>
+          <li><a href="#--footer">Contato</a></li>
           <li><a href="acompanhar_pedido_page.html">Mapa</a></li>
           <li><a href="#">Sair</a></li>
         </ul>
       </nav>
-      <nav class="navbar_compacta">
-        <div class="menu_compacto">
-          <button class="menu_open_or_close">
+      <nav class="--compactNavbar">
+        <div class="--compactMenu">
+          <button class="--menuToggle">
             <img
-            src="midias/imagens/menu_icone_branco.png"
-            alt="Mais opções"
-            width="30px"
-            height="30px"
+              src="midia/menu_icone_branco.png"
+              alt="More options"
+              width="30px"
+              height="30px"
             />
           </button>
-          <ul class="menu_ativo">
+          <ul class="--activeMenu">
             <li><a href="index.html">Home</a></li>
             <li>
               <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
@@ -58,59 +58,58 @@
             <li>
               <a href="entreEmContato_e_sobre_page.html">Sobre</a>
             </li>
-            <li><a href="#footer">Contato</a></li>
+            <li><a href="#--footer">Contato</a></li>
             <li>
-            <a href="acompanhar_pedido_page.html">Mapa</a>
-          </li>
-          <li><a href="#">Sair</a></li>
-        </ul>
-      </div>
-    </nav>
+              <a href="acompanhar_pedido_page.html">Mapa</a>
+            </li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main class="pedido-container">
+    <main class="--orderContainer">
       <h2>Fazer Pedido</h2>
       <form action="novo_pedido_page.html" method="POST">
         <h2>Coleta</h2>
-        <div class="endereco_de_coleta">
-          <input type="text" name="rua" id="rua_coleta" placeholder="Rua">
-          <input type="text" name="numero" id="numero_coleta" placeholder="Número">
-          <input type="text" name="cep" id="cep_coleta" placeholder="CEP" maxlength="8" minlength="8" required>
-          <input type="text" name="bairro" id="bairro_coleta" placeholder="Bairro" required>
-          <input type="text" name="cidade" id="cidade_coleta" placeholder="Cidade">
-          <input type="text" name="complemento" id="complemento_coleta" placeholder="Complemento (Apto., bloco...)">
-          
+        <div class="--pickupAddress">
+          <input type="text" name="rua" id="--pickupStreet" placeholder="Rua">
+          <input type="text" name="numero" id="--pickupNumber" placeholder="Número">
+          <input type="text" name="cep" id="--pickupZipCode" placeholder="CEP" maxlength="8" minlength="8" required>
+          <input type="text" name="bairro" id="--pickupNeighborhood" placeholder="Bairro" required>
+          <input type="text" name="cidade" id="--pickupCity" placeholder="Cidade">
+          <input type="text" name="complemento" id="--pickupComplement" placeholder="Complemento (Apto., bloco...)">
         </div>
         <h2>Entrega</h2>
-        <div class="endereco_de_entrega">
-          <input type="text" name="rua" id="rua_entrega" placeholder="Rua">
-          <input type="text" name="numero" id="numero_entrega" placeholder="Número">
-          <input type="text" name="cep" id="cep_entrega" placeholder="CEP" maxlength="8" minlength="8" required>
-          <input type="text" name="bairro" id="bairro_entrega" placeholder="Bairro" required>
-          <input type="text" name="cidade" id="cidade_entrega" placeholder="Cidade">
-          <input type="text" name="complemento" id="complemento_entrega" placeholder="Complemento (Apto., bloco...)">
+        <div class="--deliveryAddress">
+          <input type="text" name="rua" id="--deliveryStreet" placeholder="Rua">
+          <input type="text" name="numero" id="--deliveryNumber" placeholder="Número">
+          <input type="text" name="cep" id="--deliveryZipCode" placeholder="CEP" maxlength="8" minlength="8" required>
+          <input type="text" name="bairro" id="--deliveryNeighborhood" placeholder="Bairro" required>
+          <input type="text" name="cidade" id="--deliveryCity" placeholder="Cidade">
+          <input type="text" name="complemento" id="--deliveryComplement" placeholder="Complemento (Apto., bloco...)">
         </div>
-        <div id="peso">
-          <input type="number" id="peso_produto" name="peso_do_produto" required placeholder="Peso do produto">
-          <select name="peso" id="peso_kg_g">
+        <div id="--weightContainer">
+          <input type="number" id="--productWeight" name="peso_do_produto" required placeholder="Peso do produto">
+          <select name="peso" id="--weightUnit">
             <option value="kg">Kg (Quilo)</option>
             <option value="g">g (Grama)</option>
           </select>
         </div>
-        <div id="agendar_entrega_div">
-          <input type="checkbox" name="checkbox" id="agendar_entrega">
+        <div id="--scheduleDeliveryDiv">
+          <input type="checkbox" name="checkbox" id="--scheduleDelivery">
             <P>Agendar entrega</P>
         </div>
-        <input type="date" id="data" name="data"/>
-        <textarea name="descrição" id="descricao" placeholder="Descrição do produto" required></textarea>
+        <input type="date" id="--deliveryDate" name="data" required />
+        <textarea name="descrição" id="--productDescription" placeholder="Descrição do produto" required></textarea>
 
         <button type="submit">Enviar Pedido</button>
       </form>
     </main>
 
-    <footer>
+    <footer id="--footer">
       <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

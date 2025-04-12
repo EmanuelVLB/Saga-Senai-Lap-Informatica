@@ -16,11 +16,11 @@ h3 {
   font-weight: 700;
   text-transform: uppercase;
 }
-.not_logged_in {
+.--notLoggedIn {
   padding: 0 1em 0 0;
 }
 button,
-.not_logged_in a {
+.--notLoggedIn a {
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -66,7 +66,7 @@ header {
   position: fixed;
 }
 
-.navbar {
+.--navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +74,7 @@ header {
   padding: 0 1em;
 }
 
-.nav-links {
+.--navLinks {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -84,17 +84,17 @@ header {
   flex-wrap: wrap;
 }
 
-.nav-links li {
+.--navLinks li {
   list-style: none;
 }
 
-.nav-links li a {
+.--navLinks li a {
   padding: 0.5em;
 }
-.logged_image_user {
+.--loggedUserImage {
   display: none;
 }
-.header_bar {
+.--headerBar {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -102,27 +102,27 @@ header {
   align-items: center;
 }
 /* Meunu Ativo (para dispositivos pequenos) */
-.menu_compacto {
+.--compactMenu {
   display: none;
   padding: 0;
 }
-.menu_compacto ul li {
+.--compactMenu ul li {
   list-style: none;
 }
-.menu_open_or_close {
+.--menuToggle {
   cursor: pointer;
   background-color: transparent;
   padding: 1em 0 0 1em;
 }
-.navbar_compacta {
+.--compactNavbar {
   width: 100svw;
 }
-.menu_ativo {
+.--activeMenu {
   padding: 0 0.3em;
   transition: 0.5s ease-in-out;
   display: none;
 }
-.menu_ativo li {
+.--activeMenu li {
   transition: 0.5s ease-in-out;
   margin: 0.8em 0;
   padding: 0.5em;
@@ -138,29 +138,29 @@ main {
   align-items: center;
 }
 
-.hero {
+.--heroSection {
   text-align: center;
   padding: 2em;
 }
 
-.beneficios,
-.como-funciona,
-.cta {
+.--benefitsSection,
+.--howItWorks,
+.--ctaSection {
   text-align: center;
   padding: 2em 0;
 }
 
-.cards {
+.--benefitsCards {
   display: flex;
   justify-content: center;
   gap: 2em;
   flex-wrap: wrap;
 }
-.como-funciona ol li {
+.--howItWorks ol li {
   list-style: none;
 }
 
-.card {
+.--benefitCard {
   background: #2a2a2a;
   padding: 1em;
   border-radius: 8px;
@@ -175,28 +175,28 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .loggedOrNotlogged {
+  #--loggedOrNotLogged {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .not_logged_in{
+  .--notLoggedIn {
     width: 120%;
   }
-  .not_logged_in a{
+  .--notLoggedIn a {
     padding: 10px;
   }
-  .nav-links {
+  .--navLinks {
     display: none;
   }
-  .menu_compacto {
+  .--compactMenu {
     display: block;
   }
-  .cards {
+  .--benefitsCards {
     flex-direction: column;
     align-items: center;
   }
-  .card {
+  .--benefitCard {
     width: 90%;
   }
   header {
@@ -206,8 +206,8 @@ footer {
 }
 
 /* Página de Cadastro e Login */
-.cadastro-container form,
-.login-container form {
+.--registrationContainer form,
+.--loginContainer form {
   background-color: #2a2a2a;
   border-radius: 8px;
   display: flex;
@@ -219,8 +219,8 @@ footer {
   gap: 0.5em;
   max-width: 40em;
 }
-.cadastro-container form input,
-.login-container form input {
+.--registrationContainer form input,
+.--loginContainer form input {
   height: 2.5svh;
   width: 90%;
   font-size: 12pt;
@@ -231,7 +231,7 @@ footer {
 }
 
 /* Fazer pedido */
-.pedido-container form {
+.--orderContainer form {
   background-color: #2a2a2a;
   border-radius: 8px;
   display: flex;
@@ -244,18 +244,18 @@ footer {
   max-width: 40em;
   padding: 1em;
 }
-.pedido-container form h2,
-.pedido-container form p{
+.--orderContainer form h2,
+.--orderContainer form p {
   margin: 0;
 }
-#peso {
+#--weightContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 1em;
 }
-#peso_produto {
+#--productWeight {
   height: 2.5svh;
   width: 50%;
   font-size: 12pt;
@@ -264,7 +264,7 @@ footer {
   border: none;
   color: #000000;
 }
-#peso_kg_g {
+#--weightUnit {
   height: 2.5svh;
   width: 50%;
   font-size: 12pt;
@@ -273,39 +273,39 @@ footer {
   border: none;
   color: #000000;
 }
-#peso_kg_g option {
+#--weightUnit option {
 }
 
-#data{
+#--deliveryDate {
   display: none;
 }
-#agendar_entrega_div{
+#--scheduleDeliveryDiv {
   display: flex;
   flex-direction: row;
 }
-.endereco_de_coleta,
-.endereco_de_entrega {
+.--pickupAddress,
+.--deliveryAddress {
   display: grid;
   gap: 0.5em;
   grid-template-columns: 1fr 1fr;
 }
-#complemento_coleta,
-#complemento_entrega{
+#--pickupComplement,
+#--deliveryComplement {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.endereco_de_coleta input,
-.endereco_de_entrega input,
-#data{
+.--pickupAddress input,
+.--deliveryAddress input,
+#--deliveryDate {
   height: 1.5svh;
   width: 90%;
   font-size: 12pt;
   padding: 0.2em;
   background-color: #dfdfdf;
+  border: none;
   color: #000000;
 }
-#descricao{
-  
+#--productDescription {
   height: 1.5svh;
   max-height: 5svh;
   min-height: 2svh;
@@ -317,4 +317,156 @@ footer {
   background-color: #dfdfdf;
   border: none;
   color: #000000;
+}
+/* ================ ABOUT PAGE STYLES ================ */
+.--aboutHero {
+  background: linear-gradient(135deg, #5d3fd3 0%, #7a5fe9 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.--aboutContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.--missionVision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.--aboutCard {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.--aboutCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.--teamSection {
+  margin: 4rem 0;
+}
+
+.--teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.--teamMember {
+  text-align: center;
+}
+
+.--teamMember img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #5d3fd3;
+  transition: transform 0.3s ease;
+}
+
+.--teamMember img:hover {
+  transform: scale(1.05);
+}
+
+.--timeline {
+  position: relative;
+  margin: 4rem 0;
+  padding-left: 1.5rem;
+}
+
+.--timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #5d3fd3;
+}
+
+.--timelineItem {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.--timelineItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7a5fe9;
+}
+
+.--ctaAbout {
+  text-align: center;
+  padding: 3rem;
+  background: #2a2a2a;
+  border-radius: 8px;
+  margin: 3rem 0;
+  transition: all 0.3s ease;
+}
+
+.--ctaAbout:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(93, 63, 211, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .--aboutHero {
+      padding: 3rem 1rem;
+  }
+  
+  .--missionVision {
+      grid-template-columns: 1fr;
+  }
+  
+  .--teamGrid {
+      grid-template-columns: 1fr;
+  }
+  
+  .--timeline {
+      margin-left: 1rem;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.--aboutHero,
+.--missionVision,
+.--teamSection,
+.--timeline {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.--missionVision {
+  animation-delay: 0.2s;
+}
+
+.--teamSection {
+  animation-delay: 0.4s;
+}
+
+.--timeline {
+  animation-delay: 0.6s;
 }

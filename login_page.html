@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-      <div class="header_bar">
-        <img src="midias/imagens/lap_logo.png" alt="logo lap informática" width="90px" height="50">
-        <div id="loggedOrNotlogged">
-          <div class="logged_image_user">
-            <img src="" alt="Imagem de usuário" />
+      <div class="--headerBar">
+        <h1 class="--companyName">LAP Informática</h1>
+        <div id="--loggedOrNotLogged">
+          <div class="--loggedUserImage">
+            <img src="" alt="User image" />
           </div>
-          <div class="not_logged_in">
-            <a class="cadastre-se_bt bt_menu" href="cadastro_page.html">Cadastre-se</a>
-            <a class="login_bt bt_menu" href="login_page.html">Login</a>
+          <div class="--notLoggedIn">
+            <a class="--signUpBtn --menuBtn" href="cadastro_page.html">Cadastre-se</a>
+            <a class="--loginBtn --menuBtn" href="login_page.html">Login</a>
           </div>
         </div>
       </div>
-      <nav class="navbar">
-        <ul class="nav-links">
+      <nav class="--navbar">
+        <ul class="--navLinks">
           <li><a href="index.html">Home</a></li>
           <li>
             <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
@@ -30,22 +30,22 @@
           <li>
             <a href="entreEmContato_e_sobre_page.html">Sobre</a>
           </li>
-          <li><a href="#footer">Contato</a></li>
+          <li><a href="#--footer">Contato</a></li>
           <li><a href="acompanhar_pedido_page.html">Mapa</a></li>
           <li><a href="#">Sair</a></li>
         </ul>
       </nav>
-      <nav class="navbar_compacta">
-        <div class="menu_compacto">
-          <button class="menu_open_or_close">
+      <nav class="--compactNavbar">
+        <div class="--compactMenu">
+          <button class="--menuToggle">
             <img
-            src="midias/imagens/menu_icone_branco.png"
-            alt="Mais opções"
+            src="midia/menu_icone_branco.png"
+            alt="More options"
             width="30px"
             height="30px"
             />
           </button>
-          <ul class="menu_ativo">
+          <ul class="--activeMenu">
             <li><a href="index.html">Home</a></li>
             <li>
               <a href="prdidos_feitos_page.html">Pedidos Feitos</a>
@@ -56,7 +56,7 @@
             <li>
               <a href="entreEmContato_e_sobre_page.html">Sobre</a>
             </li>
-            <li><a href="#footer">Contato</a></li>
+            <li><a href="#--footer">Contato</a></li>
             <li>
             <a href="acompanhar_pedido_page.html">Mapa</a>
           </li>
@@ -66,21 +66,21 @@
     </nav>
   </header>
     
-    <main class="login-container">
+    <main class="--loginContainer">
         <h2>Login</h2>
         <form action="dashboard.html" method="POST">
-            <input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@example.com" maxlength="45" minlength="5" required>
+            <input type="email" id="--loginEmail" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@example.com" maxlength="45" minlength="5" required>
             
-            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <input type="password" id="--loginPassword" name="password" placeholder="Senha" required>
             
             <button type="submit">Entrar</button>
         </form>
         <p>Não tem uma conta? <a href="cadastro_page.html">Cadastre-se</a></p>
     </main>
     
-    <footer>
+    <footer id="--footer">
         <p>&copy; 2025 LAP Informática. Todos os direitos reservados.</p>
     </footer>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
