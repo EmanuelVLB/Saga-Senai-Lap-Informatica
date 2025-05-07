@@ -8,7 +8,7 @@
       href="../midia/ico/logo1.ico"
       type="image/x-icon"
     />
-    <title>Login</title>
+    <title>Cadastre-se</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -38,9 +38,38 @@
       </ul>
     </nav>
     <section>
-        <section>
-</section>
-
+      <form action="" method="post" id="cad">
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Nome completo"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Senha"
+          required
+        />
+        <input
+          type="password"
+          id="senha_verific"
+          name="senha_verificacao"
+          placeholder="Repita a senha"
+          required
+        />
+        <input type="submit" />
+        <p class="redirecionar_cad_login">Já possi cadastro? <a class="redirecionar_cad_login" href="login.html">Fazer login</a></p>
+      </form>
     </section>
     <footer>
       <a class="linkfooter insta" href="#">
