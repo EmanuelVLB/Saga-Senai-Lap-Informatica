@@ -68,6 +68,24 @@
           required
         />
         <input type="submit" />
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script>
+      function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+      }
+      window.onload = function () {
+        google.accounts.id.initialize({
+          client_id: "415815042304-lahiet2rh7u1bgj6leqt4k0puf09g35l.apps.googleusercontent.com"
+          callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "outline", size: "large" }  // customization attributes
+        );
+        google.accounts.id.prompt(); // also display the One Tap dialog
+      }
+    </script>
+    <div id="buttonDiv"></div>
         <p class="redirecionar_cad_login">Já possi cadastro? <a class="redirecionar_cad_login" href="login.html">Fazer login</a></p>
       </form>
     </section>
