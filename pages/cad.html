@@ -88,9 +88,11 @@
     </footer>
     <script src="../script.js"></script>
     <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="http://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     <script>
       function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
+        const data = jwt_decode(response.credential)
+        console.log(data)
       }
       window.onload = function () {
         google.accounts.id.initialize({
@@ -103,6 +105,7 @@
         );
         google.accounts.id.prompt(); // also display the One Tap dialog
       }
+      console.log()
     </script>
   </body>
 </html>
