@@ -136,7 +136,7 @@ section {
 }
 .redirecionar_cad_login {
     padding: 0.3rem;
-    z-index: 3;
+    z-index: -1;
 }
 #cad input, #login input {
     width: 70%;
@@ -149,7 +149,7 @@ section {
     z-index: 3;
 }
 #buttonDiv{
-    z-index: 4;
+    z-index: 3;
 }
 #cad input::placeholder, #login input::placeholder {
     color: #ccc;
