@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAP Informática</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body class="dark" onload="conferir_tema()">
+    <header>
+      <img class="img_logo" src="img/logo.png" alt="Logo lap informática" />
+      <div class="header-actions">
+        <button class="sun" id="toggleTheme">☀️/🌙</button>
+        <div class="user-wrapper">
+          <img id="userIcon" src="img/default_user.png" alt="Usuário" />
+          <div id="userMenu" class="hidden">
+            <div id="authSection">
+              <form id="loginForm" style="display: none">
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="senha"
+                  placeholder="Senha"
+                  required
+                />
+                <button type="submit">Entrar</button>
+                <p class="toggle-text">
+                  Ainda não tem uma conta?
+                  <a href="#" id="showRegister">Cadastre-se</a>
+                </p>
+              </form>
+
+              <form id="registerForm">
+                <input type="text" name="nome" placeholder="Nome" required />
+                <input type="tel" name="telefone" placeholder="Tell" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="senha"
+                  placeholder="Senha"
+                  required
+                />
+                <input
+                  type="password"
+                  name="confirmar"
+                  placeholder="Confirmar Senha"
+                  required
+                />
+                <button type="submit">Cadastrar</button>
+                <p class="toggle-text">
+                  Já tem uma conta? <a href="#" id="showLogin">Entrar</a>
+                </p>
+              </form>
+            </div>
+
+            <ul class="user_logado">
+              <li class="btn_ol sobre">Sobre</li>
+              <li class="btn_ol logoutBtn" id="logoutBtn">Sair</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mainNav" class="hidden">
+      <a href="index.html">Início</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="historico.php">Rastreamento</a>
+    </nav>
+
+    <section class="section_ped">
+      <!-- Main -->
+      <main class="pedidos_page">
+        <h2>Solicitar Entrega</h2>
+        <form id="ende">
+          <div class="end coleta">
+            <label class="div1" for="coleta">Endereço de Coleta:</label>
+            <input class="div2" id="rua_coleta" type="text" placeholder="Rua" />
+            <input
+              class="div3"
+              id="num_coleta"
+              type="number"
+              placeholder="Número"
+            />
+            <input
+              class="div4"
+              id="bairro_coleta"
+              type="text"
+              placeholder="Bairro"
+            />
+            <input
+              class="div5"
+              id="cidade_coleta"
+              type="text"
+              placeholder="Cidade"
+            />
+          </div>
+
+          <div class="end entrega">
+            <label class="div1" for="entrega">Endereço de Entrega:</label>
+            <input
+              class="div2"
+              id="rua_entrega"
+              type="text"
+              placeholder="Rua"
+            />
+            <input
+              class="div3"
+              id="num_entrega"
+              type="number"
+              placeholder="Número"
+            />
+            <input
+              class="div4"
+              id="bairro_entrega"
+              type="text"
+              placeholder="Bairro"
+            />
+            <input
+              class="div5"
+              id="cidade_entrega"
+              type="text"
+              placeholder="Cidade"
+            />
+          </div>
+       <button type="button" class="enviar_end">Atualizar Mapa</button>
+
+        </form>
+
+        <form id="pedidoForm" onsubmit="return false">
+          <label for="peso">Peso do pacote (kg):</label>
+          <input type="number" id="peso" required min="0.1" step="0.1" />
+
+          <label for="tamanho">Tamanho do pacote:</label>
+          <select id="tamanho" required>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+          </select>
+
+          <div>
+            <p>
+              <strong>Valor Total:</strong> R$ <span id="valorTotal">0.00</span>
+            </p>
+          </div>
+
+          <label>
+            <input id="meuCheckbox" type="checkbox" id="precisaTroco" /> Precisa
+            de troco?
+          </label>
+          <input
+            type="number"
+            id="valorTroco"
+            placeholder="Informe o valor para troco"
+            class="hidden"
+          />
+
+          <button type="submit">Confirmar Pedido</button>
+        </form>
+      </main>
+      <main class="main_iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d14999.951393034817!2d-44.19040368432524!3d-19.967013284934787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xa6c1005f4c8d3b%3A0x692fff60b9c53071!2sUltragaz%20-%20Rua%20Maria%20das%20Merc%C3%AAs%20Lima%20-%20Pqe%20Betim%20Ind%2C%20Betim%20-%20MG!3m2!1d-19.9594502!2d-44.1673544!4m5!1s0xa6eaa73c6d609f%3A0xd61a7f12deb82d4a!2sSENAI%20-%20Avenida%20Amazonas%20-%20Centro%2C%20Betim%20-%20MG!3m2!1d-19.9649188!2d-44.1938752!5e0!3m2!1spt-BR!2sbr!4v1753746934995!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </main>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="img/whatsapp.png" alt="WhatsApp" /></a>
+      <a href="mailto:contato@lap.com.br"
+        ><img src="img/gmail.png" alt="Gmail"
+      /></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -67,21 +67,58 @@
     <nav id="mainNav" class="hidden">
       <a href="index.html">Início</a>
       <a href="pedidos.html">Pedidos</a>
-      <a href="historico.php">Rastreamento</a>
+      <a href="./historico.php">Rastreamento</a>
     </nav>
 
-    <main class="main_index">
-      <div class="carousel">
-        <div class="slide login-cad">Passo 1: Crie uma conta ou faça login</div>
-        <div class="slide pedido-novo">
-          Passo 2: Calcule seu frete com facilidade
+    <!-- Main -->
+    <main>
+      <h2>Seus Pedidos</h2>
+      <div id="listaPedidos">
+        <!-- Conteúdo inserido via PHP -->
+<?php
+require_once("backend/conexao.php");
+
+$stmt = $pdo->prepare("SELECT * FROM pedidos ORDER BY data_pedido DESC");
+$stmt->execute();
+$pedidos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+if (empty($pedidos)) {
+  echo '
+    <div class="noPedidos">
+      <a href="./pedidos.html">Você ainda não tem pedidos. Clique aqui para fazer um.</a>
+    </div>
+  ';
+} else {
+  foreach ($pedidos as $pedido) {
+    $status = $pedido["status"] === "entregue" ? "Entregue" : "Pendente";
+
+    echo '<div class="pedidoBox">';
+    echo "<p><strong>Pedido #{$pedido['id']}</strong></p>";
+    echo "<p>Status: <span class='status {$status}'>$status</span></p>";
+    echo "<p><strong>Coleta:</strong> {$pedido['endereco_coleta']}</p>";
+    echo "<p><strong>Entrega:</strong> {$pedido['endereco_entrega']}</p>";
+    echo "<p><strong>Valor Total:</strong> R$ {$pedido['valor']}</p>";
+    echo "<p><strong>Precisa de Troco?</strong> " . ($pedido['precisa_troco'] ? "Sim (R$ {$pedido['troco']})" : "Não") . "</p>";
+
+    if ($status === "Pendente") {
+      echo '
+        <div class="entrega-form">
+          <input type="text" maxlength="3" placeholder="ID do piloto" class="input-piloto" data-id="' . $pedido['id'] . '" />
+          <button class="btn-entregue" data-id="' . $pedido['id'] . '">Concluir Entrega</button>
         </div>
-        <div class="slide status-pedido">
-          Passo 3: Acompanhe seu pedido em tempo real
-        </div>
+      ';
+    }
+
+    echo '</div>';
+  }
+}
+?>
+
+
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
       <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
